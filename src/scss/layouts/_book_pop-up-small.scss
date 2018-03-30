@@ -1,0 +1,38 @@
+.popup-small {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding: 10rem 5rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: 
+    linear-gradient(105deg, rgba($color-white, 0.8), rgba($color-white, 0.8) 100%, transparent),
+    url(../img/nat-8.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+
+  &__heading {
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+  }
+
+  &__terms {
+    margin-bottom: 8rem;
+    font-size: 1.7rem;
+    color: $color-black;
+  }
+}
