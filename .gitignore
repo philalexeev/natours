@@ -5,6 +5,7 @@ build/js
 build/*.html
 build/video
 
+.git
 .Saved/
 _arc/
 bower_components/
