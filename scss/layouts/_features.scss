@@ -1,0 +1,75 @@
+.features {
+  padding: 10rem 0;
+  margin-top: -20rem;
+  background-image: 
+    linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),
+    url('../img/nat-4.jpg');
+  background-size: cover;
+  background-position: center;
+  transform: skewY(-6.5deg);
+
+  @media screen and (min-width: 640px) {
+    padding: 24rem 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: skewY(6.5deg);
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      align-items: stretch; 
+    }
+  }
+
+  &__item {
+    width: 80%;
+    padding: 4.5rem 3.5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    background-color: rgba($color-white, .7);
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba($color-black, .3);
+    transform: translateZ(0);
+    transition: all 0.2s ease-in;
+
+    @media screen and (min-width: 1200px) {
+      width: 15%;
+      margin-right: 5%;
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      transform: scale(1.05) translateY(-2rem);
+
+      @media screen and (hover: none) {
+        transform: none;
+      }
+    }
+  }
+
+  &__item-icon {
+    height: 7.5rem;
+    width: 40%;
+    margin-bottom: 5rem;
+    fill: $color-primary;
+  }
+
+  &__item-title {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__item-article {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,64 @@
+.btn {
+  display: inline-block;
+  background-color: $color-white;
+  font-size: 2rem;
+  text-decoration: none;
+  color: $color-grey-dark;
+  transition: all .07s ease-in;
+  transform: translateZ(0);
+
+  &--round {
+    padding: 1.5rem 6rem;
+    text-transform: uppercase;
+    border-radius: 30rem;
+  }
+
+  &--round:hover {
+    transform: translateY(-5px) translateZ(0);
+    box-shadow: 0 5px 25px 1px rgba($color-black, .4);
+  }
+
+  &-squared {
+    padding: 0 .5rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: $color-primary;
+    border-bottom: 1px solid $color-primary;
+    background-color: transparent;
+    transition: all .1s ease-in;
+  }
+
+  &-squared:hover {
+    color: $color-white;
+    background-color: $color-primary;
+    transform: translateY(-.3rem) translateZ(0);
+    box-shadow: 0 5px 25px 1px rgba($color-black, .3);
+  }
+
+  &--green {
+    color: $color-white;
+    background-color: $color-primary;
+  }
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden;
+
+  &__content {
+    height: 100%;
+    background: transparent url('../img/video.jpeg') no-repeat 0 0;
+    background-size: cover;
+
+    @supports (object-fit: cover) {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
